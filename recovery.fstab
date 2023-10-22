@@ -11,8 +11,8 @@
 /cache              ext4      /dev/block/bootdevice/by-name/cache                                   flags=display="Cache";
 /data               ext4      /dev/block/bootdevice/by-name/userdata                                flags=encryptable=footer;length=-16384;fileencryption=ice:aes-256-cts;
 
-/cache              f2fs      /dev/block/bootdevice/by-name/cache                                   flags=display="Cache";
-/data               f2fs      /dev/block/bootdevice/by-name/userdata                                flags=encryptable=footer;length=-16384;fileencryption=ice:aes-256-cts;
+# /cache              f2fs      /dev/block/bootdevice/by-name/cache                                   flags=display="Cache";
+# /data               f2fs      /dev/block/bootdevice/by-name/userdata                                flags=encryptable=footer;length=-16384;fileencryption=ice:aes-256-cts;
 
 /firmware           vfat      /dev/block/bootdevice/by-name/apnhlos                                 flags=display="Firmware";fsflags=ro
 /modem              vfat      /dev/block/bootdevice/by-name/modem

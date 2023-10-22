@@ -40,7 +40,7 @@ BOARD_AVB_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
 # Bootloader"
-TARGET_BOOTLOADER_BOARD_NAME := SRPRL06C005
+TARGET_BOOTLOADER_BOARD_NAME := sm6150
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -55,8 +55,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 service_locator.enable=1 swiotlb=1 loop.max_part=7 androidboot.vbmeta.avb_version=1.0 androidboot.wificountrycode=00 buildvariant=eng
+
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_BOOTIMG_HEADER_VERSION := 1
 BOARD_KERNEL_BASE := 0x00000000
@@ -70,6 +72,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
+
 #TARGET_KERNEL_SOURCE := kernel/samsung/a70q
 #TARGET_KERNEL_CONFIG := a70q_defconfig
 
