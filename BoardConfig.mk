@@ -144,8 +144,4 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage
 TW_HAS_DOWNLOAD_MODE := true
 TW_NO_LEGACY_PROPS := true
 TW_NO_REBOOT_BOOTLOADER := true
-
-## TARGET_RECOVERY_QCOM_RTC_FIX := true
-## TW_INCLUDE_CRYPTO := true
-## TW_INCLUDE_LPDUMP := true
-## TW_INCLUDE_LPTOOLS := true
+TWRP_INCLUDE_LOGCAT := true
